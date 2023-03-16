@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+<button id="btns">什么都没有</button>
+<button id="btns">不如点击一下看看吧</button>
+<button id="btns" >试着点我试试吧</button>
+<button id="btns" >试着点我试试吧</button>
+<style>
+    img {
+        width: 100%;
+    }
+
+    #tu {
+        height: 550px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    #wen {
+  
+
+        color: #FFFFFF;
+        font-size: 30px;
+        margin: 0 auto;
+        height:550px ;
+        width: 300px;
+       /*  background-color: aqua; */
+        position: relative;
+        margin-top: -500px;
+    }
+    .ni{
+       height: 550px;
+       width: 300px;
+      
+    }
+</style>
+
+<body>
+    <div id="tu">
+        <img src="yinghua..webp" alt="">
+    </div>
+    <div id="wen">
+        <p class="ni" >你好 ,在这里相遇让我们不再陌生大家一起努力一起进步</p>
+    </div>
+
+    <script>
+
+        var btns = document.querySelectorAll("#btns")
+
+        btns[0].onclick = function () {
+
+            $("body").css('backgroundColor', '#FFFFFF');
+        }
+        btns[1].onclick = function () {
+
+            $("body").css("backgroundColor", '#000000')
+        }
+        btns[2].onmouseover =function(){
+            $("body").css("backgroundColor",'red')
+        }
+        btns[3].onmouseover =function(){
+            $("body").css("backgroundColor",'pink')
+        }
+
+    </script>
+</body>
+
+</html>
